@@ -9,17 +9,23 @@
             <span class="info__location"> Caden - Bretagne </span>
         </div> <!-- End info-->
 
-        <!-- <div > -->
-        <img src="../assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" class="photo-cv">
-        <!-- </div> -->
+        <div class="photo-cv" >
+        <img src="../assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" >
+        </div>
 
         <div class="info-bubbles bubble">
+            <div class="bubble__name">
+            <img src="../assets/images/bubble_name.png" alt="" class="bubble__name--image">
+            </div>
+            <div class="bubble__heart">
+            <img src="../assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
+            </div>
+            <div class="bubble__age">
+            <img src="../assets/images/bubble_age.png" alt="" class="bubble__age--image">
+            </div>
 
-            <img src="../assets/images/bubble_name.png" alt="" class="bubble__name">
 
-            <img src="../assets/images/bubble_age.png" alt="" class="bubble__age">
 
-            <img src="../assets/images/bubble_heart.png" alt="" class="bubble__heart">
 
         </div>
     </header>
@@ -45,6 +51,7 @@ export default {
 .header-cv {
     display: flex;
     justify-content: space-between;
+    // height: 20%;
     padding: 1rem 1rem 0 1rem;
 
     background-image: url("~@/assets/images/image_fond_nuage.png");
@@ -55,24 +62,26 @@ export default {
 
     .info {
 
+        flex-grow: 1;
+
         &__job {
             font-family: 'Lobster';
             font-weight: 700;
             font-size: 1rem;
-            margin: 1.5rem 0 0.5rem 0;
+            margin: 1rem 0 0.5rem 0;
         }
 
         &__job2 {
             font-family: 'Matiz';
             font-weight: 900;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
 
         }
 
         &__stack {
             font-family: 'AbrahamLincoln';
             font-size: 0.7rem;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
 
         &__name {
@@ -84,37 +93,58 @@ export default {
         &__location {
             font-family: 'MrDafoe';
             font-size: 0.5rem;
+            margin-bottom: 0.5rem;
         }
     }
 
     .photo-cv{
         width: 60%;
-        // &>img {
-        //     width: 100%;
-        // }
-    }
-    .bubble {
-
+        height: auto;
         &>img {
             width: 100%;
         }
+    }
+
+    .bubble {
+
+        width: 20%;
+        position: relative;
+
+
 
         &__name {
+            width: 120%;
+            position: absolute;
+            left: -40px;
 
-            &>span {
+            &--image {
+                width: 100%;
+                display: block;
+            }
+        }
 
-                &:first-child {
-                    font-family: 'Matiz';
-                }
+        &__heart {
+            width: 80%;
+            position: absolute;
+            top: 20px;
+            right: -10px;
 
-                &:last-child {
-                    font-family: 'Lobster';
-                }
+            &--image {
+                width: 100%;
+                display: block;
             }
         }
 
         &__age {
-            font-family: 'MrDafoe';
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            right: 10px;
+
+            &--image {
+                width: 100%;
+                display: block;
+            }
         }
     }
 }
