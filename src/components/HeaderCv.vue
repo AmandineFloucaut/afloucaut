@@ -9,21 +9,18 @@
             <span class="info__location"> Caden - Bretagne </span>
         </div> <!-- End info-->
 
-        <div class="info info-photo">
-            <img src="../assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut">
-        </div>
+        <!-- <div > -->
+        <img src="../assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" class="photo-cv">
+        <!-- </div> -->
 
-        <div class="info info-bulles">
-            <div class="bulle bulle__name">
-                <span> Amandine </span>
-                <span> C'est moi </span>
-            </div>
-            <div class="bulle bulle__age">
-                <span> 35 ans </span>
-            </div>
-            <div class="bulle bulle_heart">
-                <i class="fas fa-heart"></i>
-            </div>
+        <div class="info-bubbles bubble">
+
+            <img src="../assets/images/bubble_name.png" alt="" class="bubble__name">
+
+            <img src="../assets/images/bubble_age.png" alt="" class="bubble__age">
+
+            <img src="../assets/images/bubble_heart.png" alt="" class="bubble__heart">
+
         </div>
     </header>
 </template>
@@ -32,7 +29,7 @@
 export default {
     name: 'HeaderCv',
 
-    //WIP image aléatoire pour .bulle_heart
+    //WIP image aléatoire pour .bubble_heart
     data() {
         return {
 
@@ -48,7 +45,9 @@ export default {
 .header-cv {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
+
+    background-image: url("~@/assets/images/image_fond_nuage.png");
 
     span {
         display: block;
@@ -59,29 +58,67 @@ export default {
         &__job {
             font-family: 'Lobster';
             font-weight: 700;
-            font-size: 3rem;
+            font-size: 1rem;
+            margin: 1.5rem 0 0.5rem 0;
         }
 
         &__job2 {
             font-family: 'Matiz';
-            // font-family: 'Catamaran';
             font-weight: 900;
-            font-size: 4rem;
+            font-size: 0.7rem;
+
         }
 
         &__stack {
             font-family: 'AbrahamLincoln';
-            font-size: 1.5rem;
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
         }
 
         &__name {
             font-family: 'AbrahamLincoln';
+            font-size: 0.8rem;
+            margin-top: 2rem;
         }
 
         &__location {
             font-family: 'MrDafoe';
+            font-size: 0.5rem;
+        }
+    }
+
+    .photo-cv{
+        width: 60%;
+        // &>img {
+        //     width: 100%;
+        // }
+    }
+    .bubble {
+
+        &>img {
+            width: 100%;
+        }
+
+        &__name {
+
+            &>span {
+
+                &:first-child {
+                    font-family: 'Matiz';
+                }
+
+                &:last-child {
+                    font-family: 'Lobster';
+                }
+            }
+        }
+
+        &__age {
+            font-family: 'MrDafoe';
         }
     }
 }
+
+
 
 </style>
