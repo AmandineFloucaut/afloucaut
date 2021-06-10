@@ -3,7 +3,7 @@
         <div class="info info-general">
             <h1 class="info__job"> Développeuse </h1>
             <h2 class="info__job2"> web et mobile </h2>
-            <span class="info__stack"> fullstack </span>
+            <span class="info__stack"> Fullstack </span>
 
             <span class="info__name"> Amandine Floucaut </span>
             <span class="info__location"> Caden - Bretagne </span>
@@ -63,9 +63,9 @@ export default {
         }
 
         &__job2 {
-            //BUG font non reconnu
             font-family: 'Matiz';
-            font-weight: bolder;
+            // font-family: 'Catamaran';
+            font-weight: 900;
             font-size: 4rem;
         }
 

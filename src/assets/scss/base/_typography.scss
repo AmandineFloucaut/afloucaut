@@ -1,29 +1,36 @@
 @font-face {
+    font-family: 'Lobster';
+    src: url("~@/assets/fonts/Lobster/Lobster-Regular.ttf");
+    font-display: 'Verdana';
+}
+
+
+@font-face {
     font-family: 'AbrahamLincoln';
-    src: '../fonts/abraham_lincoln/AbrahamLincoln.ttf';
+    // use of resolve-url-loader
+    src: url("~@/assets/fonts/abraham-lincoln/AbrahamLincoln.ttf") format('truetype');
+
 }
 
 @font-face {
     font-family: 'Amatic';
-    src: '../fonts/Amatic_SC/AmaticSC-Regular.ttf';
+    src: url("~@/assets/fonts/amaticsc/AmaticSC-Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'AmaticBold';
-    src: '../fonts/Amatic_SC/AmaticSC-Bold.ttf';
-}
-
-@font-face {
-    font-family: 'Lobster';
-    src: '../fonts/Lobster/Lobster-Regular.ttf';
+    src: url("~@/assets/fonts/amaticsc/AmaticSC-Bold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Matiz';
-    src: '../fonts/matiz/Matiz.ttf';
+    src:    url("~@/assets/fonts/matiz/Matiz.ttf") format('truetype'),
+            url("~@/assets/fonts/matiz/Matiz.woff2") format('woff2'),
+            url("~@/assets/fonts/matiz/Matiz.woff") format('woff'),
+            url("~@/assets/fonts/matiz/Matiz.eot") format('embedded-opentype');
 }
 
 @font-face {
     font-family: 'MrDafoe';
-    src: '../fonts/Mr_Dafoe/MrDafoe-regular.ttf';
+    src: url("~@/assets/fonts/Mr_Dafoe/MrDafoe-Regular.ttf");
 }
