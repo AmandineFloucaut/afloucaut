@@ -10,24 +10,21 @@
         </div> <!-- End info-->
 
         <div class="photo-cv" >
-        <img src="../assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" >
+        <img src="~@/assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" >
         </div>
 
         <div class="info-bubbles bubble">
             <div class="bubble__name">
-            <img src="../assets/images/bubble_name.png" alt="" class="bubble__name--image">
+            <img src="~@/assets/images/bubble_name.png" alt="" class="bubble__name--image">
             </div>
             <div class="bubble__heart">
-            <img src="../assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
+            <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
             </div>
             <div class="bubble__age">
-            <img src="../assets/images/bubble_age.png" alt="" class="bubble__age--image">
+            <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image">
             </div>
-
-
-
-
         </div>
+
     </header>
 </template>
 
@@ -46,7 +43,7 @@ export default {
 
 <style scoped lang="scss">
 
-@import '../assets/scss/main.scss';
+@import '~@/assets/scss/main.scss';
 
 .header-cv {
     display: flex;
@@ -55,6 +52,7 @@ export default {
     padding: 1rem 1rem 0 1rem;
 
     background-image: url("~@/assets/images/image_fond_nuage.png");
+    background-size: cover;
 
     span {
         display: block;
@@ -100,6 +98,8 @@ export default {
     .photo-cv{
         width: 60%;
         height: auto;
+        text-align: end;
+
         &>img {
             width: 100%;
         }
@@ -109,8 +109,6 @@ export default {
 
         width: 20%;
         position: relative;
-
-
 
         &__name {
             width: 120%;

@@ -1,6 +1,7 @@
 @import './base/typography';
+@import './abstract/variables';
 
 * {
     box-sizing: border-box;
-    color: #4e4d4b;
+    color: $dark-grey;
 }
