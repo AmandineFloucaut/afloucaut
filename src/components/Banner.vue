@@ -91,4 +91,6 @@ export default {
     }
 }
 
+//TODO Medias queries
+
 </style>

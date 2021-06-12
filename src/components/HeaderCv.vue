@@ -110,9 +110,14 @@ export default {
         width: 20%;
         position: relative;
 
+        &__name,
+        &__heart,
+        &__age {
+            position: absolute;
+        }
+
         &__name {
             width: 120%;
-            position: absolute;
             left: -40px;
 
             &--image {
@@ -123,7 +128,6 @@ export default {
 
         &__heart {
             width: 80%;
-            position: absolute;
             top: 20px;
             right: -10px;
 
@@ -135,7 +139,6 @@ export default {
 
         &__age {
             width: 100%;
-            position: absolute;
             bottom: 50px;
             right: 10px;
 
@@ -147,6 +150,6 @@ export default {
     }
 }
 
-
+//TODO Medias queries
 
 </style>
