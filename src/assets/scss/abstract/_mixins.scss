@@ -1,3 +1,9 @@
+@mixin screen-small {
+    @media(min-width: 360px) {
+        @content;
+    }
+}
+
 @mixin screen-medium {
     @media(min-width: 600px){
         @content;

@@ -6,7 +6,7 @@
             <span class="info__stack"> Fullstack </span>
 
             <span class="info__name"> Amandine Floucaut </span>
-            <span class="info__location"> Caden - Bretagne </span>
+            <span class="info__location"> {{location}} </span>
         </div> <!-- End info-->
 
         <div class="photo-cv" >
@@ -32,7 +32,14 @@
 export default {
     name: 'HeaderCv',
 
-    //WIP image aléatoire pour .bubble_heart
+    props: {
+        location: {
+            type: String,
+            default: 'Caden - Bretagne'
+        }
+    },
+
+    //TODO image aléatoire pour .bubble_heart
     data() {
         return {
 
@@ -88,7 +95,6 @@ export default {
         &__location {
             font-family: 'MrDafoe';
             font-size: 0.6rem;
-            // margin-bottom: 0.5rem;
         }
     }
 
@@ -135,7 +141,6 @@ export default {
         }
 
         &__age {
-            // width: 100%;
             bottom: 50px;
             right: 10px;
 
@@ -147,9 +152,10 @@ export default {
     }
 }
 
-//TODO Medias queries
 
-@media(min-width: 360px) {
+//==== MEDIAS QUERIES ====//
+
+@include screen-small {
 
     .header-cv {
 

@@ -17,6 +17,11 @@
             <a href="#contact-page" class="contact--info"> {{mail}} </a>
         </div>
 
+        <div class="contact-infos github">
+            <a href=""><img src="~@/assets/images/icon-web.png" alt="" class="contact-icon"></a>
+            <a href="https://github.com/AmandineFloucaut" class="contact--info"> {{github}} </a>
+        </div>
+
     </nav>
 </template>
 
@@ -41,6 +46,11 @@ export default {
         mail: {
             type: String,
             default: 'afloucaut@gmail.com'
+        },
+
+        github: {
+            type: String,
+            default: 'https://github.com/AmandineFloucaut'
         }
 
     },
@@ -66,24 +76,34 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0.2rem;
+    padding: 0.3rem;
     background-color: $dark-grey;
     color: $beige;
 
-    &-icon {
-        width: 1rem;
+    .address {
+        display: none;
     }
 
-    .contact-infos {
+    .phone {
+        display: none;
+    }
+
+    &-infos {
 
         display: flex;
+        align-items: center;
         font-size: 0.8rem;
         font-family: 'Amatic';
         margin-left: 0.3rem;
 
         &>a {
             color: $beige;
+            text-decoration: none;
         }
+    }
+
+    &-icon {
+        width: 1rem;
     }
 
      &--info {
@@ -92,5 +112,66 @@ export default {
 }
 
 //TODO Medias queries
+
+@include screen-small {
+
+    .contact {
+        .phone {
+            display: block;
+        }
+    }
+}
+
+@include screen-medium {
+
+    .contact {
+        .address {
+            display: block;
+        }
+    }
+
+    .contact {
+
+        &-infos {
+            font-size: 1.2rem;
+            margin-left: 0rem;
+        }
+
+        &-icon {
+            width: 1.3rem;
+        }
+
+        &--info {
+            margin-left: 0.3rem;
+        }
+    }
+}
+
+@include screen-extra-large {
+
+    .contact {
+
+        &-infos {
+            font-size: 1.5rem;
+        }
+
+        &-icon {
+            width: 1.8rem;
+        }
+
+    }
+}
+
+@include screen-huge {
+    .contact {
+        &-infos {
+            font-size: 1.5rem;
+        }
+
+        &-icon {
+            width: 1.8rem;
+        }
+    }
+}
 
 </style>
