@@ -87,6 +87,7 @@ export default {
         }
 
         &__name {
+            text-transform: uppercase;
             font-family: 'AbrahamLincoln';
             font-size: 0.8rem;
             margin-top: 2rem;

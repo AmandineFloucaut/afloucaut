@@ -18,7 +18,7 @@
         </div>
 
         <div class="contact-infos github">
-            <a href=""><img src="~@/assets/images/icon-web.png" alt="" class="contact-icon"></a>
+            <a href=""><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a>
             <a href="https://github.com/AmandineFloucaut" class="contact--info"> {{github}} </a>
         </div>
 

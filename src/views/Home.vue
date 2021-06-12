@@ -4,6 +4,7 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <HeaderCv/>
     <Banner/>
+    <Experiences/>
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 // import HelloWorld from '@/components/HelloWorld.vue';
 import HeaderCv from '@/components/HeaderCv.vue';
 import Banner from '@/components/Banner.vue';
+import Experiences from '@/components/Experiences.vue';
 
 export default {
   name: 'Home',
   components: {
     // HelloWorld,
     HeaderCv,
-    Banner
+    Banner,
+    Experiences
   }
 }
 </script>
