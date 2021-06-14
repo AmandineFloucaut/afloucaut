@@ -419,8 +419,31 @@ export default {
 
     .header-cv {
 
+        .photo-cv {
+            width: 25%;
+            height: auto;
+        }
+
         .bubble {
-            margin-top: 4rem;
+            margin-top: 2rem;
+
+            &__name {
+                width: 60%;
+                top: 20px;
+                left: -170px;
+            }
+
+            &__heart {
+                width: 30%;
+                top: 90px;
+                right: 150px;
+            }
+
+            &__age {
+                width: 50%;
+                top: 230px;
+                right: 250px;
+            }
         }
     }
 }
