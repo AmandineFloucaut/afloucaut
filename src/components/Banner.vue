@@ -2,11 +2,6 @@
 
     <nav class="contact">
 
-        <div class="contact-infos address">
-            <a href=""><img src="~@/assets/images/icon-address.png" alt="" class="contact-icon"></a>
-            <a href="#contact-page" class="contact--info"> {{address}} </a>
-        </div>
-
         <div class="contact-infos phone">
             <a href=""><img src="~@/assets/images/icon-tel.png" alt="" class="contact-icon"></a>
             <a href="#contact-page" class="contact--info"> {{phone}} </a>
@@ -17,8 +12,15 @@
             <a href="#contact-page" class="contact--info"> {{mail}} </a>
         </div>
 
-        <div class="contact-infos github">
+        <div class="contact-infos linkedin">
+            <!--TODO modifier icone-->
             <a href=""><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a>
+            <a href="https://www.linkedin.com/in/amandine-floucaut-64a85ba3/" class="contact--info"> {{linkedin}} </a>
+        </div>
+
+
+        <div class="contact-infos github">
+            <a href="https://github.com/AmandineFloucaut"><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a>
             <a href="https://github.com/AmandineFloucaut" class="contact--info"> {{github}} </a>
         </div>
 
@@ -33,11 +35,6 @@ export default {
 
     props: {
 
-        address: {
-            type: String,
-            default: '2 rue du calvaire, 56220 Caden',
-        },
-
         phone: {
             type: String,
             default: '06 43 02 01 99'
@@ -48,9 +45,14 @@ export default {
             default: 'afloucaut@gmail.com'
         },
 
+        linkedin: {
+            type: String,
+            default: 'Profil Linkedin'
+        },
+
         github: {
             type: String,
-            default: 'https://github.com/AmandineFloucaut'
+            default: 'Compte Github'
         }
 
     },
@@ -80,10 +82,6 @@ export default {
     background-color: $dark-grey;
     color: $beige;
 
-    .address {
-        display: none;
-    }
-
     .phone {
         display: none;
     }
@@ -93,12 +91,12 @@ export default {
         display: flex;
         align-items: center;
         font-size: 0.8rem;
-        font-family: 'Amatic';
         margin-left: 0.3rem;
 
         &>a {
             color: $beige;
             text-decoration: none;
+            font-family: 'Amatic';
         }
     }
 
@@ -123,12 +121,6 @@ export default {
 }
 
 @include screen-medium {
-
-    .contact {
-        .address {
-            display: block;
-        }
-    }
 
     .contact {
 

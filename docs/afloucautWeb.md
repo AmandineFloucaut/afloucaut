@@ -1,5 +1,15 @@
 # afloucautWeb
 
+<!-- A ajouter sur cv papier :
+      - Lien linkedin + github (clicable sur pdf)
+      - Intro recherche alternance
+      - Plus détailler la formation O'clock
+        - Téléprésentiel, labelisée Grande Ecole du numérique
+        - D'octobre 2020 à avril 2021
+        - 3 mois de socle : HTML5, CSS3, PHP, Javascript
+        - 1 mois de spécialisation Wordpress / VueJs
+        - 1 mois de projet professionnelle en conditions réelles-->
+
 ## Contenu principal
 
 - Qui suis-je ?
