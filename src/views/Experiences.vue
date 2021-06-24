@@ -3,14 +3,10 @@
     <h1> Mes experiences </h1>
 
     <section class="experience experience-oclock">
-        <div class="experience__title">
-            <img src="@/assets/images/logo-oclock.png" alt="Logo Ecole O'clock">
-            <h2> 2020 - 2021 - Projets professionnels </h2>
-        </div>
 
         <div class="shabadabada-project project">
             <h3 class="project__title">
-                Lead dev Shabadabada <br>
+                Shabadabada <br>
                 Site de divertissement (blindtest)
             </h3>
             <div class="project__images">
@@ -20,7 +16,9 @@
             </div>
             <p class="project__presentation">
                 Shabadabada est un site de divertissement sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents blind tests.
-                Il a été réalisé au sein d'une équipe de 3 personnes. <a href="https://github.com/SolenePilliard"> Solène Pilliard </a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum. Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement !
+                Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard"> Solène Pilliard </a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum. </p>
+            <p class="project__presentation">
+                Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement !
                 Voici les différentes tâches que j'ai réalisée :
             </p>
             <ul>
@@ -83,9 +81,7 @@
 
     <section class="experience experience-bank">
         <div class="experience__title">
-            <img src="@/assets/images/logo-bpgo.png" alt="logo BPGO">
             <h2>2006 - 2020 Conseillère clientèle particulier </h2>
-            <img src="@/assets/images/logo-bnp-paribas.png" alt="logo Bnp Paribas">
         </div>
         <p></p>
         <ul>
@@ -125,18 +121,12 @@ export default {
 
     .experience {
 
-        // font-family: 'Arial';
-
         &__title {
             margin: 1.5rem 0.5rem;
             display: flex;
             justify-content: space-around;
             align-items: center;
             font-weight: bold;
-
-            &>img {
-                width: 20%;
-            }
 
             &>h2 {
                 font-family: 'ArialBold';
@@ -145,7 +135,6 @@ export default {
 
         .project {
             margin: 2rem 0.5rem;
-            // font-family: 'Arial';
 
             &__title {
                 margin: 1rem;
@@ -156,10 +145,13 @@ export default {
 
             &__images {
 
+                display: flex;
+                justify-content: center;
+                margin: 2rem 0;
+
                 &>img {
                     border: solid 5px $beige;
                     filter: grayscale(70%);
-                    // margin: 1rem 0.5rem;
                 }
 
                 &>img:hover {
@@ -168,14 +160,12 @@ export default {
 
                 &>:nth-child(1) {
                     width: 60%;
-                    position: relative;
                 }
 
                 &>:nth-child(2) {
                     width: 20%;
-                    position: absolute;
-                    top: 50%;
-                    right: 5%;
+                    margin-top: -20px;
+                    margin-left: -20px;
                 }
             }
         }

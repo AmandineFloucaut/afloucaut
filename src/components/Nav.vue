@@ -1,0 +1,36 @@
+<template>
+    <div id="nav" class="nav">
+        <router-link to="/a-propos" class="nav__link"> A propos </router-link>
+        <router-link to="/experiences" class="nav__link"> Expériences </router-link>
+        <router-link to="/competences" class="nav__link"> Compétences </router-link>
+        <router-link to="/formations" class="nav__link"> Formations </router-link>
+    </div>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped lang='scss'>
+
+@import '~@/assets/scss/main.scss';
+
+.nav {
+    padding: 0.5rem;
+    background-color: $dark-grey;
+    display: flex;
+    justify-content: space-around;
+
+    &__link {
+        margin: 0 0.5rem;
+        font-family: 'Amatic';
+        color: $beige;
+
+        // border: solid 4px $beige;
+        // border-radius: 10px;
+        // padding: 2rem;
+      }
+}
+</style>

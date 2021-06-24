@@ -1,5 +1,6 @@
 <template>
     <header class="header-cv">
+        <router-link to="/" class="nav__link">
         <div class="info info-general">
             <h1 class="info__job"> Développeuse </h1>
             <h2 class="info__job2"> web et mobile </h2>
@@ -24,7 +25,7 @@
             <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image">
             </div>
         </div>
-
+        </router-link>
     </header>
 </template>
 
@@ -52,11 +53,11 @@ export default {
 
 @import '~@/assets/scss/main.scss';
 
-.header-cv {
+.nav__link {
     display: flex;
     justify-content: center;
     padding: 1rem 0.5rem 0 0.5rem;
-
+    text-decoration: none;
     background-image: url("~@/assets/images/image_fond_nuage.png");
     background-size: cover;
 
@@ -65,6 +66,8 @@ export default {
     }
 
     .info {
+
+        text-align: center;
 
         &__job {
             font-family: 'Lobster';
