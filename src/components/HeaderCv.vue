@@ -41,6 +41,7 @@ export default {
     },
 
     //TODO image aléatoire pour .bubble_heart
+    // TODO info bulle "retour accueil" au survol de la souris
     data() {
         return {
 

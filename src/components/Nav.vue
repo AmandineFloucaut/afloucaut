@@ -33,4 +33,20 @@ export default {
         // padding: 2rem;
       }
 }
+
+@include screen-medium {
+    .nav {
+        &__link {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include screen-extra-large {
+    .nav {
+        &__link {
+            font-size: 1.8rem;
+        }
+    }
+}
 </style>

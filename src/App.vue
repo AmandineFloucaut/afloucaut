@@ -7,14 +7,15 @@
           <router-view/>
         </section>
 
-        <Banner/>
+        <Footer/>
     </main>
 </template>
 
 <script>
+
 import HeaderCv from './components/HeaderCv.vue';
 import Nav from './components/Nav.vue';
-import Banner from './components/Banner.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'Application',
@@ -22,7 +23,7 @@ export default {
   components: {
     HeaderCv,
     Nav,
-    Banner
+    Footer
   },
 
   data(){
@@ -42,6 +43,7 @@ export default {
 
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 
     section {
       flex-grow: 1;
