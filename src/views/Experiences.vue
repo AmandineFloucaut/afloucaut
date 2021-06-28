@@ -1,13 +1,12 @@
 <template>
-<div class="experiences">
+<div class="experiences title">
     <h1> Mes experiences </h1>
 
     <section class="experience experience-oclock">
 
         <div class="shabadabada-project project">
             <h3 class="project__title">
-                Shabadabada <br>
-                Site de divertissement (blindtest)
+                Shabadabada
             </h3>
             <div class="project__images">
 
@@ -15,21 +14,24 @@
                 <img src="@/assets/images/shabadabada-mobile.png" alt="">
             </div>
             <p class="project__presentation">
-                Shabadabada est un site de divertissement sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents blind tests.
-                Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard"> Solène Pilliard </a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum. </p>
+                Shabadabada est un <strong> site de divertissement </strong> sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents <strong>blind tests</strong>. <br>
+                Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard">Solène Pilliard</a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum. </p>
             <p class="project__presentation">
-                Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement !
-                Voici les différentes tâches que j'ai réalisée :
+                Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement ! <br>
+
             </p>
-            <ul>
-                <li>Réalisation des wireframes, du cahier des charges et des documents relatifs à la base de données</li>
-                <li>Création d'un plugin (Architecture Classes et Models)</li>
-                <li>Automatisation des endpoints de l'Api Deezer pour l'import des données dans le back office</li>
-                <li>Préparation des routes custom de l'Api Interne et des playlists aléatoires à envoyer au front</li>
-                <li>Intégration (architecture du style avec SASS)</li>
-                <li>Récupération des données et création des parties côté utilisateur</li>
-                <li>Enregistrement des parties créees, puis jouées implémentées des réponses et scores de l'utilisateur</li>
-            </ul>
+            <p class="project__tasks">
+                Voici les différentes tâches que j'ai réalisée :
+                <ul >
+                    <li class="task">Réalisation des wireframes, du cahier des charges et des documents relatifs à la base de données</li>
+                    <li class="task">Création d'un plugin (Architecture Classes et Models)</li>
+                    <li class="task">Automatisation des endpoints de l'Api Deezer pour l'import des données dans le back office</li>
+                    <li class="task">Préparation des routes custom de l'Api Interne et des playlists aléatoires à envoyer au front</li>
+                    <li class="task">Intégration (architecture du style avec SASS)</li>
+                    <li class="task">Récupération des données et création des parties côté utilisateur</li>
+                    <li class="task">Enregistrement des parties créees, puis jouées implémentées des réponses et scores de l'utilisateur</li>
+                </ul>
+            </p>
 
             <p>Technos : WordPress, Api Externe, PHP, POO, Composer, Vue.js, SASS, Axios, npm, parcel</p>
         </div>
@@ -110,13 +112,10 @@ export default {
 
 .experiences {
 
-    margin-top: 1.5rem;
+    padding: 1.2rem;
 
     &>h1 {
-        font-family: 'Matiz';
-        text-transform: uppercase;
-        margin: 1rem 1rem;
-        border-bottom: solid 3px $dark-grey;
+       @include title-page;
     }
 
     .experience {
@@ -127,18 +126,12 @@ export default {
             justify-content: space-around;
             align-items: center;
             font-weight: bold;
-
-            &>h2 {
-                font-family: 'ArialBold';
-            }
         }
 
         .project {
-            margin: 2rem 0.5rem;
+            margin: 2rem 0rem;
 
             &__title {
-                margin: 1rem;
-                padding: 0rem 0.5rem;
                 font-family: 'ArialBold';
                 font-size: 1.2rem;
             }
@@ -167,6 +160,21 @@ export default {
                     margin-top: -20px;
                     margin-left: -20px;
                 }
+            }
+
+            &__presentation {
+                @include paragraph-page;
+
+            }
+
+            &__tasks {
+                margin-top: 1rem;
+                line-height: 1.2rem;
+
+                &>ul {
+                    list-style: disc inside;
+                }
+
             }
         }
     }

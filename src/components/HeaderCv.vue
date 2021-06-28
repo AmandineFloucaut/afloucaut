@@ -331,51 +331,51 @@ export default {
           .info {
 
             &__job {
-                font-size: 3rem;
-                margin-top: 3rem;
+                font-size: 2.5rem;
+                margin-top: 1rem;
             }
 
             &__job2 {
-                font-size: 3.5rem;
+                font-size: 3rem;
             }
 
             &__stack {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             &__name {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 margin-top: 3rem;
             }
 
             &__location {
-                font-size: 1.5rem;
+                font-size: 1rem;
             }
         }
 
         .photo-cv {
-            width: 30%;
+            width: 20%;
             height: auto;
         }
 
         .bubble {
 
             &__name {
-                width: 70%;
+                width: 50%;
                 top: 20px;
-                left: -80px;
+                left: -40px;
             }
 
             &__heart {
-                width: 40%;
+                width: 25%;
                 top: 70px;
-                right: 50px;
+                right: 80px;
             }
 
             &__age {
-                width: 60%;
-                top: 180px;
-                right: 100px;
+                width: 40%;
+                top: 150px;
+                right: 120px;
             }
         }
     }
@@ -388,32 +388,32 @@ export default {
         .info {
 
             &__job {
-                margin-top: 8rem;
+                margin-top: 4rem;
             }
 
             &__name {
-                margin-top: 4rem;
+                margin-top: 2rem;
             }
         }
 
         .bubble {
 
             &__name {
-                width: 65%;
+                width: 50%;
                 top: 20px;
-                left: -150px;
+                left: -30px;
             }
 
             &__heart {
-                width: 35%;
+                width: 25%;
                 top: 90px;
                 right: 100px;
             }
 
             &__age {
-                width: 55%;
-                top: 250px;
-                right: 200px;
+                width: 35%;
+                top: 180px;
+                right: 180px;
             }
         }
     }
@@ -422,6 +422,17 @@ export default {
 @include screen-huge {
 
     .header-cv {
+
+        .info {
+
+            &__job {
+                margin-top: 2rem;
+            }
+
+            &__name {
+                margin-top: 2rem;
+            }
+        }
 
         .photo-cv {
             width: 25%;

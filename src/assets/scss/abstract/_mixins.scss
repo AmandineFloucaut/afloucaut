@@ -1,3 +1,5 @@
+/* MEDIA QUERIES */
+
 @mixin screen-small {
     @media(min-width: 360px) {
         @content;
@@ -26,4 +28,27 @@
     @media(min-width: 1800px){
         @content;
     }
+}
+
+
+/* MIXINS PAGES */
+
+@mixin title-page {
+    font-family: 'Matiz';
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+    border-bottom: solid 3px $dark-grey;
+    @content;
+}
+
+@mixin paragraph-page {
+    padding: 0.5rem 0rem;
+    text-indent: 2rem;
+    line-height: 1.2rem;
+
+    strong {
+      font-weight: bold;
+    }
+
+    @content;
 }
