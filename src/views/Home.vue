@@ -148,12 +148,19 @@ export default {
       width: 10rem;
       height: 5rem;
       border-radius: 5px;
+      box-shadow: 6px 5px 5px 1px rgb(88, 87, 85, 0.69) ;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $dark-grey;
       color: $beige;
       font-family: 'ArialBold';
+
+      &:hover {
+        transition: 0.5s;
+        transform: translate(-0.2rem, -0.5rem);
+        box-shadow: 6px 7px 4px 1px rgb(78, 77, 75, 0.69) ;
+      }
     }
   }
 
