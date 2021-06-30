@@ -1,6 +1,7 @@
 <template>
     <header class="header-cv">
         <router-link to="/" class="nav__link">
+
         <div class="info info-general">
             <h1 class="info__job"> Développeuse </h1>
             <h2 class="info__job2"> web et mobile </h2>
@@ -11,20 +12,21 @@
         </div> <!-- End info-->
 
         <div class="photo-cv" >
-        <img src="~@/assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" >
+            <img src="~@/assets/images/photo_cv_amandinefloucaut.png" alt="Photo Amandine Floucaut" >
         </div>
 
         <div class="info-bubbles bubble">
             <div class="bubble__name">
-            <img src="~@/assets/images/bubble_name.png" alt="" class="bubble__name--image">
+                <img src="~@/assets/images/bubble_name.png" alt="" class="bubble__name--image">
             </div>
             <div class="bubble__heart">
-            <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
+                <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
             </div>
             <div class="bubble__age">
-            <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image">
+                <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image">
             </div>
         </div>
+
         </router-link>
     </header>
 </template>

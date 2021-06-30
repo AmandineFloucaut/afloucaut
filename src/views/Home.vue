@@ -26,8 +26,9 @@ export default {
   name: 'Home',
 
    created(){
+
+    // Called funciton shuffleQuotes for display randomly quote when the page loads
     this.shuffleQuotes(this.quotes);
-    console.log(this.quotes);
   },
 
   data(){
@@ -83,7 +84,7 @@ export default {
              },
              {
                quote: "Il n'y a pas d'expert qui soit absolument compétent.",
-               author: "PtahhotepDe Ptahhotep / Yoyotte"
+               author: "Ptahhotep"
              },
              {
                quote: "Méfiez-vous d'une personne trop compétente, elle risque de manquer d'humanité.",
