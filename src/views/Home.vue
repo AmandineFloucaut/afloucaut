@@ -25,6 +25,11 @@ export default {
 
   name: 'Home',
 
+   created(){
+    this.shuffleQuotes(this.quotes);
+    console.log(this.quotes);
+  },
+
   data(){
       return {
           quotes: [
@@ -32,11 +37,6 @@ export default {
               quote: "Il est difficile d’échouer mais il est encore plus difficile de ne pas avoir essayé de réussir",
               author: "Théodore Roosevelt"
               },
-
-             {
-              quote: "Il est difficile d’échouer mais il est encore plus difficile de ne pas avoir essayé de réussir",
-              author: "Théodore Roosevelt"
-             },
              {
                quote: "La chute n’est pas un échec. L’échec c’est de rester là où on est tombé.",
                author: "Socrate"
@@ -107,7 +107,25 @@ export default {
              },
           ],
       }
-  }
+  },
+
+  methods: {
+
+    /**
+     * Method fto randomly select index array quotes[]
+     * @param array
+     */
+    shuffleQuotes(array){
+
+      // DOC https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+      // argument's sort function define a randomly number by substracting 0.5
+      array.sort(()=> Math.random() - 0.5);
+
+      return array;
+    }
+  },
+
+
 }
 
 </script>
