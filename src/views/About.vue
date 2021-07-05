@@ -41,5 +41,39 @@ export default{
   }
 }
 
+@include screen-medium {
+
+  .about {
+    margin : 3rem;
+
+    &__title {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@include screen-large {
+
+  .about {
+    margin: 2rem 5rem 5rem 5rem;
+    font-size: 1.2rem;
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@include screen-extra-large {
+
+  .about {
+    margin: 4rem 7rem 7rem 7rem;
+  }
+}
+
 </style>
 

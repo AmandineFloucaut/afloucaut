@@ -24,14 +24,14 @@
     }
 }
 
-@mixin screen-huge{
+@mixin screen-huge {
     @media(min-width: 1800px){
         @content;
     }
 }
 
 
-/* MIXINS PAGES */
+/* MIXINS ELEMENTS */
 
 @mixin title-page {
     font-family: 'Matiz';
