@@ -34,9 +34,10 @@
 /* MIXINS ELEMENTS */
 
 @mixin title-page {
-    font-family: 'Matiz';
+    font-family: 'ArialBold';
     text-transform: uppercase;
-    margin: 1rem 0rem;
+    margin: 2rem 0rem;
+    padding-bottom: 0.2rem;
     border-bottom: solid 3px $dark-grey;
     @content;
 }
