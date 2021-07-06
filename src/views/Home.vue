@@ -95,7 +95,7 @@ export default {
              },
              {
                quote: "Méfiez-vous d'une personne trop compétente, elle risque de manquer d'humanité.",
-               author: ""
+               author: "Inconnu"
              },
              {
                quote: "Donnez-vous la permission d’être un débutant.",
@@ -141,7 +141,6 @@ export default {
 <style scoped lang="scss">
 
 @import '~@/assets/scss/main.scss';
-
 
   .blockquote {
     text-align: center;

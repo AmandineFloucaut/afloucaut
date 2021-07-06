@@ -1,5 +1,6 @@
 <template>
     <div id="nav" class="nav">
+        <router-link to="/" class="nav__link"> Home </router-link>
         <router-link to="/a-propos" class="nav__link"> A propos </router-link>
         <router-link to="/experiences" class="nav__link"> Expériences </router-link>
         <router-link to="/competences" class="nav__link"> Compétences </router-link>
@@ -9,7 +10,11 @@
 
 <script>
 export default {
+    name: 'Nav',
 
+    data(){
+        homeLinkClass: 'router-link-active, router-link-exact-active';
+    },
 }
 </script>
 
@@ -27,11 +32,12 @@ export default {
         margin: 0 0.5rem;
         font-family: 'Amatic';
         color: $beige;
+    }
 
-        // border: solid 4px $beige;
-        // border-radius: 10px;
-        // padding: 2rem;
-      }
+    .router-link-active,
+    .router-link-exact-active {
+        font-weight: bold;
+    }
 }
 
 @include screen-medium {

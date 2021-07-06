@@ -1,6 +1,5 @@
 <template>
-    <header class="header-cv">
-        <router-link to="/" class="nav__link">
+    <header class="header-cv nav__link">
 
         <div class="info info-general">
             <h1 class="info__job"> Développeuse </h1>
@@ -19,7 +18,7 @@
             <div class="bubble__name animate__animated animate__zoomIn animate__display-2s" style="animation-delay:1s">
                 <img src="~@/assets/images/bubble_name.png" alt="" class="bubble__name--image">
             </div>
-            <div class="bubble__heart animate__animated animate__zoomInRight animate__display-4s" style="animation-delay:3s">
+            <div class="bubble__heart animate__animated animate__jackInTheBox animate__display-3s" style="animation-delay:3s">
                 <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image ">
             </div>
             <div class="bubble__age animate__animated animate__fadeInBottomRight animate__display-3s" style="animation-delay:2s">
@@ -27,7 +26,6 @@
             </div>
         </div>
 
-        </router-link>
     </header>
 </template>
 
@@ -41,13 +39,6 @@ export default {
             default: 'Caden - Bretagne'
         }
     },
-
-    // TODO info bulle "retour accueil" au survol de la souris
-    data() {
-        return {
-
-        }
-    }
 }
 </script>
 
@@ -62,6 +53,7 @@ export default {
     text-decoration: none;
     background-image: url("~@/assets/images/image_fond_nuage.png");
     background-size: cover;
+    border-bottom: solid 3px $dark-grey;
 
     span {
         display: block;
@@ -109,8 +101,10 @@ export default {
         height: auto;
         text-align: end;
 
+
         &>img {
             width: 100%;
+            border-bottom: solid 2px $dark-grey;
         }
     }
 
