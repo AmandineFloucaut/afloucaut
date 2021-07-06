@@ -1,38 +1,69 @@
 <template>
 
- <!-- <section class="experience experience-bank">
+    <section class="skills ">
 
-            <h2 class="experience__title">Conseillère clientèle particulier <br> 2006-2020 </h2>
+        <h1 class="skills__title"> Hard Skills </h1>
+            <div class="skills-hard">
+            <div class="skills-hard__block">
+                <div>
+                    <h2 class="skills__type"> Technologies </h2>
+                        <ul class="skills__list">
+                            <li> HTML / CSS </li>
+                            <li> SASS </li>
+                            <li> PHP </li>
+                            <li> Javascript </li>
+                            <li> Ajax </li>
+                        </ul>
+                </div>
 
-            <p class="experience__tasks">
-                <ul>
-                    <li>Veille nouveautés application et tablette collaborateur</li>
-                    <li>Développement de l'utilisation du digital au sein des agences</li>
-                    <li>Accueil clientèle particuliers et professionnels</li>
-                    <li>Gestion, développement et fidélisation portefeuille clients particuliers</li>
-                    <li>Analyse des besoins et conseils financiers selon appétences</li>
-                    <li>Traitement des urgences et gestion des conflits</li>
-                </ul>
-            </p>
+                <div>
+                    <h2 class="skills__type"> Frameworks et CMS </h2>
+                        <ul class="skills__list">
+                            <li> WordPress </li>
+                            <li> Vue.JS </li>
+                            <li> Lumen </li>
+                            <li> Bootstrap </li>
+                        </ul>
+                </div>
+            </div>
 
-        </section> -->
+            <div class="skills-hard__block">
+                <div>
+                    <h2 class="skills__type"> Environnements </h2>
+                        <ul class="skills__list">
+                            <li> Apache </li>
+                            <li> Linux </li>
+                            <li> Git </li>
+                            <li> npm </li>
+                            <li> composer </li>
+                        </ul>
+                </div>
+                <div>
+                    <h2 class="skills__type"> Graphisme </h2>
+                        <ul class="skills__list">
+                            <li> Adobe Lightroom </li>
+                            <li> Adobe Photoshop CC </li>
+                        </ul>
+                </div>
+            </div>
+            </div>
+    </section>
 
-SOFT SKILLS
+    <section class="skills skills-soft">
 
-→ Détecter et analyser les besoins clients → Développer et fidéliser un portefeuille → Traiter les urgences et gestion des conflits → Analyse des risques financiers → Rédaction (descriptif, rapport, analyse ...) → Gestion de projet en méthodes agiles et notamment le modèle Scrum
-HARD SKILLS
+        <h1 class="skills__title"> Soft Skills </h1>
 
-Technologies
-→ HTML / CSS → SASS → PHP → Javascript → Ajax
-Frameworks et CMS
-→ WordPress → Vue.JS → Lumen → Bootstrap
+        <ul class="skills__list">
+            <li> Détecter et analyser les besoins clients </li>
+            <li> Développer et fidéliser un portefeuille </li>
+            <li> Traiter les urgences et gestion des conflits </li>
+            <li> Analyse des risques financiers </li>
+            <li> Rédaction (descriptif, rapport, analyse ...) </li>
+            <li> Gestion de projet en méthodes agiles et notamment le modèle Scrum </li>
+        </ul>
 
-→ → →
--,
-Environnements
-→ Git → npm → composer
-Graphisme
-→ Adobe Lightroom → Adobe Photoshop CC
+    </section>
+
 </template>
 
 <script>
@@ -41,6 +72,51 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 
+@import "~@/assets/scss/main.scss";
+
+.skills {
+    padding: 1rem 1.5rem 0rem 1.5rem;
+
+    &__title {
+        @include title-page;
+    }
+
+    &-hard__block {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+
+        &>div {
+            width: 50%;
+        }
+    }
+
+    &__type {
+        font-family: "ArialBold";
+    }
+
+    &__list {
+        @include list-page;
+    }
+}
+
+@include screen-large {
+
+    .skills {
+
+        margin: 3rem;
+
+        &-hard {
+            display: flex;
+            justify-content: center;
+
+            &__block {
+                width: 70%;
+            }
+        }
+    }
+
+}
 </style>

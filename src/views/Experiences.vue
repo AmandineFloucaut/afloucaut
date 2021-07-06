@@ -26,17 +26,17 @@
                 Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement ! <br>
             </p>
 
-            <p class="project__tasks">
-                <ul >
-                    <li class="task">Réalisation des wireframes, du cahier des charges et des documents relatifs à la base de données</li>
-                    <li class="task">Création d'un plugin (Architecture Classes et Models)</li>
-                    <li class="task">Automatisation des endpoints de l'Api Deezer pour l'import des données dans le back office</li>
-                    <li class="task">Préparation des routes custom de l'Api Interne et des playlists aléatoires à envoyer au front</li>
-                    <li class="task">Intégration (architecture du style avec SASS)</li>
-                    <li class="task">Récupération des données et création des parties côté utilisateur</li>
-                    <li class="task">Enregistrement des parties créees, puis jouées implémentées des réponses et scores de l'utilisateur</li>
-                </ul>
-            </p>
+
+            <ul class="project__tasks">
+                <li class="task">Réalisation des wireframes, du cahier des charges et des documents relatifs à la base de données</li>
+                <li class="task">Création d'un plugin (Architecture Classes et Models)</li>
+                <li class="task">Automatisation des endpoints de l'Api Deezer pour l'import des données dans le back office</li>
+                <li class="task">Préparation des routes custom de l'Api Interne et des playlists aléatoires à envoyer au front</li>
+                <li class="task">Intégration (architecture du style avec SASS)</li>
+                <li class="task">Récupération des données et création des parties côté utilisateur</li>
+                <li class="task">Enregistrement des parties créees, puis jouées implémentées des réponses et scores de l'utilisateur</li>
+            </ul>
+
 
 
         </section>
@@ -59,14 +59,12 @@
 
             <p class="project__presentation"> Oprofile est un site fictif qui met en relation des clients avec des développeurs. Ce projet m'a permis de travailler la création et personnalisation de thème avec Wordpress ainsi que l'authentification et les droits des utilisateurs.</p>
 
-            <p class="project__tasks">
-                <ul>
-                    <li>Intégration et fonctionnalités front</li>
-                    <li>Architecture du back, approche SOLID</li>
-                    <li>Création plugin, custom routes</li>
-                    <li>Gestion de l'authentification et de la sécurité (JWT)</li>
-                </ul>
-            </p>
+            <ul class="project__tasks">
+                <li>Intégration et fonctionnalités front</li>
+                <li>Architecture du back, approche SOLID</li>
+                <li>Création plugin, custom routes</li>
+                <li>Gestion de l'authentification et de la sécurité (JWT)</li>
+            </ul>
 
         </section>
 
@@ -86,12 +84,10 @@
                 Site de gestion de tâches et rappel, le front a été réalisé avec le trio HTML/CSS/javascript et le back avec le framework PHP Lumen.
             </p>
 
-            <p class="project__tasks">
-                <ul>
-                    <li>Intégration et fonctionnalités front (création, modification, archive des tâches côté utilisateur)</li>
-                    <li>Création et gestion du back (architecture MVC, CRUD)</li>
-                </ul>
-            </p>
+            <ul class="project__tasks">
+                <li>Intégration et fonctionnalités front (création, modification, archive des tâches côté utilisateur)</li>
+                <li>Création et gestion du back (architecture MVC, CRUD)</li>
+            </ul>
 
         </section>
 
@@ -109,14 +105,12 @@
 
             <p class="project__presentation"> Site factice de vente de chaussures</p>
 
-            <p class="project__tasks">
-                <ul>
-                    <li>Intégration et fonctionnalités front (Tri et affichage des produits par catégories)</li>
-                    <li>Création et gestion du back (architecture MVC, CRUD)</li>
-                    <li>Gestion de l'authentification et de la sécurité (ACL, Token) </li>
-                    <li>Gestion du router (Altorouter)</li>
-                </ul>
-            </p>
+            <ul class="project__tasks">
+                <li>Intégration et fonctionnalités front (Tri et affichage des produits par catégories)</li>
+                <li>Création et gestion du back (architecture MVC, CRUD)</li>
+                <li>Gestion de l'authentification et de la sécurité (ACL, Token) </li>
+                <li>Gestion du router (Altorouter)</li>
+            </ul>
 
         </section>
 
@@ -204,12 +198,7 @@ export default {
         }
 
         &__tasks {
-            margin-top: 1rem;
-            line-height: 1.2rem;
-
-            &>ul {
-                list-style: disc inside;
-            }
+           @include list-page;
         }
     }
 
