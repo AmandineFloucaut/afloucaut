@@ -42,7 +42,6 @@ export default {
         }
     },
 
-    //TODO image aléatoire pour .bubble_heart
     // TODO info bulle "retour accueil" au survol de la souris
     data() {
         return {
@@ -164,7 +163,7 @@ export default {
 
 @include screen-small {
 
-    .header-cv {
+    .nav__link {
 
         .bubble {
 
@@ -182,7 +181,7 @@ export default {
 
 @media(min-width: 400px) {
 
-    .header-cv {
+    .nav__link {
 
         .photo-cv{
             width: 40%;
@@ -237,7 +236,10 @@ export default {
 
 @include screen-medium {
 
-    .header-cv {
+    .nav__link {
+
+        // flex-direction: row;
+        // align-items: center;
 
         .info {
 
@@ -293,7 +295,7 @@ export default {
 
 @include screen-large {
 
-    .header-cv {
+    .nav__link {
 
         .photo-cv {
             width: 25%;
@@ -326,7 +328,7 @@ export default {
 
 @include screen-extra-large {
 
-    .header-cv {
+    .nav__link {
 
         justify-content: space-around;
 
@@ -385,7 +387,7 @@ export default {
 
 @media(min-width: 1500px) {
 
-    .header-cv {
+    .nav__link {
 
         .info {
 
@@ -423,7 +425,7 @@ export default {
 
 @include screen-huge {
 
-    .header-cv {
+    .nav__link {
 
         .info {
 

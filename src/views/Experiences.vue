@@ -20,8 +20,8 @@
                 </div>
 
                 <p class="project__presentation">
-                    Shabadabada est un <strong> site de divertissement </strong> sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents <strong>blind tests</strong>. <br>
-                    Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard">Solène Pilliard</a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum.
+                    <a href="http://ec2-54-211-13-201.compute-1.amazonaws.com/apo-Shabadabada/public/front/" target="_blank" title="Au clic, le lien s'ouvrira dans une nouvelle fenêtre.">Shabadabada</a> est un <strong> site de divertissement </strong> sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents <strong>blind tests</strong>. <br>
+                    Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard" target="_blank" title="Au clic, le lien sera ouvert dans une nouvelle fenêtre.">Solène Pilliard</a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum.
                 </p>
                 <p class="project__presentation">
                     Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement ! <br>
@@ -51,12 +51,13 @@
                 <p class="project__technos">
                     WordPress, POO PHP, Composer, Vue.js, SASS, Axios, npm
                 </p>
-
-                <div class="project__images" style="position: relative; padding-bottom: 48.90625%; height: 0;">
-                    <iframe src="https://www.loom.com/embed/b5c939497b1d430e9b751a873e95a979" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+<!-- style="position: relative; padding-bottom: 48.90625%; height: 0;"
+style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;-->
+                <div class="project__images" >
+                    <iframe src="https://www.loom.com/embed/b5c939497b1d430e9b751a873e95a979" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
 
-                <p class="project__presentation"> Oprofile est un site fictif qui met en relation des clients avec des développeurs.Un thème Wordpress a été créé pour le front et un plugin pour la gestion du back.</p>
+                <p class="project__presentation"> Oprofile est un site fictif qui met en relation des clients avec des développeurs. Ce projet m'a permis de travailler la création et personnalisation de thème avec Wordpress ainsi que l'authentification et les droits des utilisateurs.</p>
 
                 <p class="project__tasks">
                     <ul>
@@ -208,6 +209,10 @@ export default {
 
                 &>:nth-child(2) {
                     width: 20%;
+                }
+
+                &>iframe  {
+                    width: 100%;
                 }
             }
 

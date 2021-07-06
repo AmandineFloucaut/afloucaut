@@ -1,6 +1,6 @@
 <template>
     <main id="app">
-        <HeaderCv/>
+        <!-- <HeaderCv/> -->
         <Nav/>
 
         <section>
@@ -48,6 +48,8 @@ export default {
     section {
       flex-grow: 1;
       background-color: $beige;
+      background-image: url("~@/assets/images/image_fond_nuage.png");
+      background-size: cover;
     }
 }
 

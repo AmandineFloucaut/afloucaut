@@ -1,4 +1,5 @@
 <template>
+  <HeaderCv/>
   <div class="container">
     <div class="blockquote">
       <q class="blockquote__quote"> "{{quotes[0].quote}}" </q>
@@ -21,9 +22,15 @@
 <script>
 // @ is an alias to /src
 
+import HeaderCv from '../components/HeaderCv.vue';
+
 export default {
 
   name: 'Home',
+
+  components: {
+    HeaderCv
+  },
 
    created(){
 
