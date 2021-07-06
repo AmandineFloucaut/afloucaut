@@ -16,14 +16,14 @@
         </div>
 
         <div class="info-bubbles bubble">
-            <div class="bubble__name">
+            <div class="bubble__name animate__animated animate__zoomIn animate__display-2s" style="animation-delay:1s">
                 <img src="~@/assets/images/bubble_name.png" alt="" class="bubble__name--image">
             </div>
-            <div class="bubble__heart">
-                <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image">
+            <div class="bubble__heart animate__animated animate__zoomInRight animate__display-4s" style="animation-delay:3s">
+                <img src="~@/assets/images/bubble_heart.png" alt="" class="bubble__heart--image ">
             </div>
-            <div class="bubble__age">
-                <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image">
+            <div class="bubble__age animate__animated animate__fadeInBottomRight animate__display-3s" style="animation-delay:2s">
+                <img src="~@/assets/images/bubble_age.png" alt="" class="bubble__age--image ">
             </div>
         </div>
 
