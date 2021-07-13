@@ -205,16 +205,6 @@ export default {
     &-bank {
         margin: 2rem 1rem 4rem 1rem;
     }
-
-    &__tasks {
-            margin-top: 1rem;
-            line-height: 1.2rem;
-
-            &>ul {
-                list-style: disc inside;
-            }
-    }
-
 }
 
 @include screen-medium {
