@@ -132,15 +132,20 @@ export default {
 
 .experiences {
 
-    &>hr {
+    padding: 1.2rem;
 
-    border: 0;
-    height: 1px;
-    background: $dark-grey;
-    background: linear-gradient(90deg, rgba(230,227,220,1) 0%, rgba(78,77,75,1) 50%, rgba(230,227,220,1) 100%);
+    &>h1 {
+        margin: 2rem;
     }
 
-    padding: 1.2rem;
+    &>hr {
+        border: 0;
+        height: 1px;
+        background: $dark-grey;
+        background: linear-gradient(90deg, rgba(230,227,220,1) 0%, rgba(78,77,75,1) 50%, rgba(230,227,220,1) 100%);
+    }
+
+
 
     &__title {
        @include title-page;

@@ -54,7 +54,7 @@ export default {
                author: "Confucius"
              },
              {
-               quote: "Faites quelques chose et, si ça ne fonctionne pas, essayez autre chose.",
+               quote: "Faites quelque chose et, si ça ne fonctionne pas, essayez autre chose.",
                author: "Franklin Delano Roosevelt"
              },
              {
