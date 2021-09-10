@@ -166,24 +166,26 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // margin: 1rem 1rem;
     padding: 2rem 0.5rem;
 
     .link {
+      text-decoration: none;
       width: 10rem;
       height: 5rem;
-      border-radius: 5px;
+      border-radius: 20px;
       box-shadow: 6px 5px 5px 1px rgb(88, 87, 85, 0.69) ;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $dark-grey;
       color: $beige;
-      font-family: 'ArialBold';
+      font-family: 'AbrahamLincoln';
+      font-weight: bold;
+      font-size: 1.3rem;
 
       &:hover {
         transition: 0.5s;
-        transform: translate(-0.2rem, -0.5rem);
+        transform: translate(-0.5rem, -0.8rem);
         box-shadow: 6px 7px 4px 1px rgb(78, 77, 75, 0.69) ;
       }
     }
@@ -210,7 +212,7 @@ export default {
       .link {
         width: 12rem;
         height: 7rem;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
       }
     }
 }
@@ -220,9 +222,9 @@ export default {
       padding: 2rem 20rem 4rem 20rem;
 
       .link {
-        width: 12rem;
-        height: 7rem;
-        font-size: 1.2rem;
+        width: 15rem;
+        height: 9rem;
+        font-size: 1.8rem;
       }
     }
 }

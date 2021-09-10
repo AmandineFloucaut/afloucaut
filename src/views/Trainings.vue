@@ -26,7 +26,6 @@
     <p class="openclassrooms trainings__skills" >
         <strong> 2019-2020 -  Formation à distance Openclassrooms </strong>  :
         <ul class="openclassrooms__details">
-            <li> Introduction à jQuery </li>
             <li> Ligne de commande et terminal </li>
             <li> Créer un site design avec Wordpress </li>
             <li> Apprendre à coder avec Javascript </li>

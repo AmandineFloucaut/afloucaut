@@ -3,24 +3,24 @@
     <nav class="contact">
 
         <div class="contact-infos phone">
-            <a href=""><img src="~@/assets/images/icon-tel.png" alt="" class="contact-icon"></a>
+            <!-- <a href=""><img src="~@/assets/images/icon-tel.png" alt="" class="contact-icon"></a> -->
             <a href="#contact-page" class="contact--info"> {{phone}} </a>
         </div>
 
         <div class="contact-infos mail">
-            <a href=""><img src="~@/assets/images/icon-mail.png" alt="" class="contact-icon"></a>
+            <!-- <a href=""><img src="~@/assets/images/icon-mail.png" alt="" class="contact-icon"></a> -->
             <a href="#contact-page" class="contact--info"> {{mail}} </a>
         </div>
 
         <div class="contact-infos linkedin">
             <!--TODO modifier icone-->
-            <a href=""><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a>
+            <!-- <a href=""><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a> -->
             <a href="https://www.linkedin.com/in/amandine-floucaut-64a85ba3/" class="contact--info"> {{linkedin}} </a>
         </div>
 
 
         <div class="contact-infos github">
-            <a href="https://github.com/AmandineFloucaut"><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a>
+            <!-- <a href="https://github.com/AmandineFloucaut"><img src="~@/assets/images/icon-github.png" alt="" class="contact-icon"></a> -->
             <a href="https://github.com/AmandineFloucaut" class="contact--info"> {{github}} </a>
         </div>
 
