@@ -3,7 +3,7 @@
 <div class="trainings">
 
     <p class="opquast trainings__skills" >
-        <strong> 2021 - <a href="" title="Télécharger le document pdf" @click="downloadOpquastPdf">  Certification Opquast </a></strong>   - 880/1000 : évaluation sur la culture et le vocabulaire des activités du web, son approche est multidisciplinaire et transversale avec une étude des divers domaines et métiers tels que le SEO, l'écoconception, l'accessibilité, le design, la gestion de projet. L'expérience utilisateur est également un de point fort de cette formation. <a href="https://www.opquast.com/" target="_blank" title="Au clic, le lien s'ouvrira dans une nouvelle fenêtre.">(Lien vers le site officiel d'opquast)</a>
+        <strong> 2021 - <a href="" title="Télécharger le document pdf" @click="downloadOpquastPdf">  Certification Opquast </a></strong>   - 880/1000 : évaluation de la culture et du vocabulaire des activités du web, son approche est multidisciplinaire et transversale avec une étude des divers domaines et métiers tels que le SEO, l'écoconception, l'accessibilité, le design, la gestion de projet. L'expérience utilisateur est également un de point fort de cette formation. <a href="https://www.opquast.com/" target="_blank" title="Au clic, le lien s'ouvrira dans une nouvelle fenêtre.">(Lien vers le site officiel d'opquast)</a>
 
         <ul class="opquast__skills">
             <li> Maîtriser le vocabulaire et les métiers du projet Web </li>
@@ -15,7 +15,7 @@
     </p>
 
     <p class="oclock trainings__skills" >
-        <strong> 2020-2021 -  Formation Développeur Web et Mobile Ecole O'clock </strong> (Labellisée Grande Ecolde du Numérique) :
+        <strong> 2020-2021 -  Formation Développeur Web et Mobile Ecole O'clock </strong> (Labellisée Grande Ecole du Numérique) :
             <ul class="oclock__details">
                 <li> Du 26 octobre 2020 au 13 avril 2021 </li>
                 <li> 3 mois de socle avec les technologies HTML/CSS, PHP, MySQL et Javascript. Approche SOLID, architecture MVC, CRUD, utilisation de la méthode Ajax, Programmation Orientée Objet. </li>
