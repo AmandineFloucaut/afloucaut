@@ -7,7 +7,7 @@
 }
 
 @mixin screen-medium {
-    @media(min-width: 600px){
+    @media(min-width: 750px){
         @content;
     }
 }
@@ -47,17 +47,12 @@
     text-indent: 2rem;
     line-height: 1.2rem;
 
-    strong {
-      font-weight: bold;
-    }
-
-    
     @content;
 }
 
 @mixin list-page {
     margin-top: 1rem;
-    line-height: 1.2rem;
+    line-height: 1rem;
     list-style: disc inside;
     @content
 }

@@ -19,13 +19,9 @@
             </div>
 
             <p class="project__presentation">
-                <a href="http://ec2-54-211-13-201.compute-1.amazonaws.com/apo-Shabadabada/public/front/" target="_blank" title="Au clic, le lien s'ouvrira dans une nouvelle fenêtre.">Shabadabada</a> est un <strong> site de divertissement </strong> sur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différents <strong>blind tests</strong>. <br>
+                Shabadabadaest un site de divertissementsur lequel les utilisateurs peuvent tester leurs connaissances musicales au travers de différentsblind tests.
                 Il a été construit par une équipe de 3 personnes. <a href="https://github.com/SolenePilliard" target="_blank" title="Au clic, le lien sera ouvert dans une nouvelle fenêtre.">Solène Pilliard</a> est à l'origine de ce projet qui a été réalisé en conditions réelles, sur une période de 3 semaines et demi en suivant la méthodologie Scrum.
             </p>
-            <p class="project__presentation">
-                Nous avons décidé de continuer à faire vivre ce site, en venant l'implémenter de nouvelles fonctionnalités et nouvelles catégories. N'hésitez donc pas à le visiter régulièrement ! <br>
-            </p>
-
 
             <ul class="project__tasks">
                 <li class="task">Réalisation des wireframes, du cahier des charges et des documents relatifs à la base de données</li>
@@ -122,6 +118,21 @@
 export default {
 
     name: 'Experiences',
+
+    data(){
+        return {
+            projects: {
+                "project_1" : {
+                    "title": "Shabadabada",
+                    "techno": "WordPress, Api Externe, PHP, POO, Composer, Vue.js, SASS, Axios, npm, parcel",
+                    "images": [
+                        "shabadabada-desktop.png",
+                       " shabadabada-mobile.png",
+                    ]
+                }
+            }
+        }
+    }
 
 }
 </script>

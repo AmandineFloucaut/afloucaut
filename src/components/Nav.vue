@@ -1,16 +1,39 @@
 <template>
     <div id="nav" class="nav">
-        <router-link to="/" class="nav__link"> Home </router-link>
-        <router-link to="/a-propos" class="nav__link"> A propos </router-link>
-        <router-link to="/experiences" class="nav__link"> Expériences </router-link>
-        <router-link to="/competences" class="nav__link"> Compétences </router-link>
-        <router-link to="/formations" class="nav__link"> Formations </router-link>
+        <router-link to="/" class="nav__link"> {{link_1}} </router-link>
+        <router-link to="/a-propos" class="nav__link"> {{link_2}} </router-link>
+        <router-link to="/experiences" class="nav__link"> {{link_3}} </router-link>
+        <router-link to="/competences" class="nav__link"> {{link_4}} </router-link>
+        <router-link to="/formations" class="nav__link"> {{link_5}} </router-link>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Nav',
+
+    props: {
+        link_1: {
+            type: String,
+            default: 'Home'
+        },
+        link_2: {
+            type: String,
+            default: 'A propos'
+        },
+        link_3: {
+            type: String,
+            default: 'Expériences'
+        },
+        link_4: {
+            type: String,
+            default: 'Compétences'
+        },
+        link_5: {
+            type: String,
+            default: 'Formations'
+        }
+    },
 
     data(){
         homeLinkClass: 'router-link-active, router-link-exact-active';
