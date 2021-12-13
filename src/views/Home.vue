@@ -34,7 +34,7 @@ export default {
 
    created(){
 
-    // Called funciton shuffleQuotes for display randomly quote when the page loads
+    // Called funciton shuffleQuotes for display randomly quote when the home page loads
     this.shuffleQuotes(this.quotes);
   },
 
@@ -120,7 +120,7 @@ export default {
   methods: {
 
     /**
-     * Method fto randomly select index array quotes[]
+     * Method to randomly select index array quotes[]
      * @param array
      */
     shuffleQuotes(array){

@@ -15,7 +15,7 @@
                 </p>
 
                 <!-- <div class="project__images">
-                    TODO Dynamiser les images, BUG: ne récupère plus l'image compiler lors de l'injection de la variable image => v-for="(image, index) in element.images" :key="index"
+                    TODO Dynamiser les images, BUG: ne récupère plus l'image compilée lors de l'injection de la variable image => v-for="(image, index) in element.images" :key="index"
                     <img src="@/assets/images/shabadabada-desktop.png" alt="">
                     <img src="@/assets/images/shabadabada-mobile.png" alt="">
                 </div> -->
@@ -147,6 +147,7 @@ export default {
             font-family: 'Matiz';
             font-size: 1.2rem;
             text-align: center;
+            margin-bottom: 1.5rem;
         }
 
         &__technos {
