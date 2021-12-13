@@ -33,7 +33,7 @@ export default{
         "Je suis enfin prête à me lancer sur le marché du travail et afin d'accélérer ma progression, je suis à la recherche :",
         [
         "de rencontres avec des développeurs indépendants, pour créer des partenariats ou simplement échanger sur le métier",
-        "d'un poste de développeur web  dans une petite entreprise au sein de laquelle je pourrai être force de proposition (temps plein ou temps partiel)"
+        "d'un poste de développeur web dans une entreprise au sein de laquelle je pourrai être force de proposition (temps plein ou temps partiel)"
         ],
       ]
     }
